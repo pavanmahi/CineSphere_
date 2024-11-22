@@ -419,7 +419,7 @@ form.addEventListener("submit", (e) => {
 
 const logout = document.getElementById("logout");
 logout.addEventListener("click", (e) => {
-  window.location.replace("/home/home.html");
+  window.location.replace("/home/index.html");
 });
 
 function showSection() {
