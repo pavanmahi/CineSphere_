@@ -8,11 +8,6 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors(
-  {
-    origin: ["https://cine-sphere-home.vercel.app","https://cine-sphere-bz91.vercel.app"],
-    credentials: true,
-    methods: "GET, POST, PUT, DELETE",
-  }
 ));
 const port = process.env.PORT || 8000;
 const MONGO_URL = process.env.MONGO_URL;
