@@ -1,0 +1,21 @@
+{
+  "name": "backend_connection",
+  "version": "1.0.0",
+  "description": "connect backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon indexB.js"
+  },
+  "author": "pavan67",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}

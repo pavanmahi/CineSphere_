@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineSphere</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="intro">
+        <h1 class="movie">CineSphere</h1>
+        <!-- <i class="fa-solid fa-film "></i> -->
+        <i class="fa-solid fa-clapperboard fa-3x logo"></i>
+      </div>
+      <div class="aut">
+        <button class="register" onclick="showR()">REGISTER</button>
+        <button class="login" onclick="showL()">LOGIN</button>
+      </div>
+    </div>
+    <!-- <div class="auth"> -->
+    <div class="middle">
+      <div class="mid">
+        <div class="mid_left">
+          <h2><strong>Welcome to CineSphere</strong></h2>
+          <!-- <p>CineSphere is an advanced web application designed to revolutionize the way you explore and manage movies online. Leveraging modern web technologies, we offer:</p> -->
+          <p>
+            Your ultimate movie discovery platform. <br />
+            Enjoy personalized recommendations,<br />
+            language-based filtering, and advanced search options.
+          </p>
+        </div>
+        <div class="login_form" onsubmit="login(event)" id="login_form">
+          <h1>LOGIN</h1>
+          <h2 id="fail2"></h2>
+          <h2 id="fail1"></h2>
+          <form class="form" name="f1">
+            <!-- <label for="login">Username:</label> -->
+            <input
+              type="text"
+              name="user"
+              id="login"
+              placeholder="Username"
+              required
+            />
+            <br />
+            <!-- <label for="pwd1">Password : </label> -->
+            <input
+              type="password"
+              name="pwd"
+              id="pwd1"
+              placeholder="Password"
+              required
+            />
+            <br />
+            <div>
+              <input type="submit" name="submit" id="submitL" value="LOGIN" />
+              <input type="button" value="SIGNUP" onclick="showR()" />
+            </div>
+          </form>
+        </div>
+        <div class="register_form" id="register_form">
+          <h1>REGISTER</h1>
+          <form class="form" onsubmit="register(event)" name="f2">
+            <!-- <label for="name">Name:</label> -->
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <br />
+            <!-- <label for="username">Username:</label> -->
+            <input
+              type="text"
+              name="user"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <br />
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <br />
+            <!-- <label class="pwlb" for="pwd2">Password : </label> -->
+            <input
+              type="password"
+              name="pwd"
+              id="pwd2"
+              placeholder="Password"
+              required
+            />
+            <br />
+            <div>
+              <input
+                type="submit"
+                name="submit"
+                id="submitR"
+                value="REGISTER"
+              />
+              <input type="button" value="LOGIN" onclick="showL()" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="footer">
+      <div class="reach">
+        <h3>Get in touch :</h3>
+      </div>
+      <div id="images2" class="images2">
+        <a href="mailto:pavanbejawada4376@gmail.com"
+          ><img id="mail" src="../images/mail.png" alt="mail"
+        /></a>
+        <a href="https://github.com/pavanmahi"
+          ><img id="git" src="../images/github.png" alt="github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/pavan-bejawada-81b59a23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          ><img id="in" src="../images/in.png" alt="linked"
+        /></a>
+        <a href="https://x.com/PavanMahi78?t=y6Jp9-58SRgxNqCZibiWeQ&s=09"
+          ><img id="x" src="../images/x.png" alt="x"
+        /></a>
+        <a href="https://www.instagram.com/pavan._mahi/"
+          ><img id="insta" src="../images/insta.jpeg" alt="insta"
+        /></a>
+      </div>
+      <div class="span_div">
+        <h3><span class="span">&copy;</span> <i>2024 PavanMahi</i></h3>
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>

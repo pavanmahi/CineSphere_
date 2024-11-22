@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" class="css">
+	<link rel="stylesheet" href="/frontend/home/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<title>CineSphere</title>
+</head>
+<body>
+	<div class="topnav">  
+		<div class="active">
+			<div class="intro">
+				<a  href="">CineSphere</a>
+				<i class="fa-solid fa-clapperboard fa-3x logo"></i>
+			</div>
+			<div class="ham">
+				<div class="menu-icon" id="menu-icon">
+					<h1>&#9776;</h1>
+				  </div>
+				  <ul class="nav-links" id="nav-links">
+					<li id="home1"><a href="">Home</a></li>
+					<li id="gowatchlist1"><a href="">Watchlist</a></li>
+					<li id="goliked1"><a href="">Liked</a></li>
+					<li id="profile1"><a href="">Profile</a></li>
+					<li id="logout1"><a href="">Logout</a></li>
+				  </ul>
+			</div>
+		</div>  
+		<div class="search">
+			<form action="" role="search" id="form">
+				<input class="search_input" type="search" id="query" name="search" placeholder="Search">
+			</form>
+		</div>
+		<div class="user">
+			<h4 id="home">HOME</h4>
+			<h4 id="gowatchlist">WATCHLIST</h4>
+			<h4 id="goliked">LIKED</h4>
+			<h4 id="profile">PROFILE</h4>
+			<h4 id="logout">LOGOUT</h4>
+		</div>
+	</div>
+	<section id="section">
+		<div id="cat">
+			<h4 id="tl">TELUGU</h4>
+			<h4 id="en">ENGLISH</h4>
+			<h4 id="hin">HINDHI</h4>
+		</div>
+		<div class="display">
+			<div class="left">
+                <img id="detail_img" src="/frontend/images/projects.jpg" alt="img">
+				<div class="left_down">
+                        <h1 id="detail_title">Title : </h1>
+						<h1 id="original_title">Original_Title : </h1>
+                        <h2 id="year">Year : </h2>
+                        <h3 id="popularity">Popularity : </h3>
+                        <h3 id="rating">Rating : </h3>
+				</div>
+			</div>
+			<div class="right">
+                <div class="right_top">
+                      <div class="description">
+						<h1 id="overview">Overview : </h1>
+						<p id="para">Here is the description about the movie ..!! </p>
+					  </div>
+					  <div class="user_add">
+						<form class="display_form" action="">
+							<label for="fvrt_box" class="custom-button" id="fvrt">WATCHLIST</label>
+							<input type="checkbox" name="watchlist" id="fvrt_box" >
+							
+							<button type="button" class="custom-button" id="liked" onclick="handleIsLiked(event);">LIKE</button>
+							<input type="checkbox" name="liked" id="liked_box" >
+						</form>
+					  </div>
+				</div>
+				<div class="right_bottom">
+					<div id="reviews_head">
+						<h1 >Reviews</h1>
+					</div>
+                      <div class="review_row">
+					  </div>
+				</div>
+			</div>
+		</div>
+		<div id="movies">
+
+		</div>
+		<div id="nextid">
+
+		</div>
+	</section>
+	<div class="middle2">
+		<div class="mid2">
+			<div class="register_form r2" id="register_form">
+				<h1 id="welcome"></h1>
+                <form class="form" onsubmit="changeP(event)" name="f2">
+					<div class="label">
+						<label for="username">Username:</label>
+					    <input type="text" name="user" id="username"  readonly>
+					</div>
+					<br>
+					<div class="label">
+						<label for="email">Email:</label>
+						<br>
+						<input  type="email" name="email" id="email" readonly>
+					</div>
+					<br>
+					<div class="label">
+						<label for="pwd2">Password : </label>
+						<input type="password" name="pwd" id="pwd2" readonly>
+					</div>
+					<br>
+                    <div>
+                        <input type="submit" name="submit" id="submitR" value="CHANGE">
+                        <input type="button" value="SAVE" onclick="saveChanged(event)">
+                    </div>
+                </form>
+                <h2 id="fail"></h2>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="reach">
+			<h3>Get in touch :</h3>
+		</div>
+		<div id="images2" class="images2">
+		  <a href="mailto:pavanbejawada4376@gmail.com"><img id="mail" src="images/mail.png" alt="mail"></a>  
+		   <a href="https://github.com/pavanmahi"><img id="git" src="images/github.png" alt="github"></a> 
+		   <a href="https://www.linkedin.com/in/pavan-bejawada-81b59a23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img id="in" src="images/in.png" alt="linked"></a> 
+		  <a href="https://x.com/PavanMahi78?t=y6Jp9-58SRgxNqCZibiWeQ&s=09"><img id="x" src="images/x.png" alt="x"></a>  
+		  <a href="https://www.instagram.com/pavan._mahi/"><img id="insta" src="images/insta.jpeg" alt="insta"></a>  
+		</div>
+		<div class="span_div">
+			<h3><span class="span"> &copy;</span> <i>2024 PavanMahi. All Rights Reserved.</i></h3>
+		</div>
+	</div>
+	<div id="customAlert" class="custom-alert">
+		<div class="custom-alert-content">
+		  <span class="close-btn" onclick="closeAlert()">&times;</span>
+		  <p id="alertMessage"></p>
+		  <button id="csbtn" onclick="closeAlert()">OK</button>
+		</div>
+	  </div>	  
+</body>
+<script src="index.js"></script>
+</html>
