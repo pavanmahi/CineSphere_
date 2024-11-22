@@ -17,7 +17,7 @@ async function register(event) {
   const username = document.f2.user.value;
 
   try {
-    const response = await fetch("http://localhost:8000/adduser", {
+    const response = await fetch("https://cine-sphere-chi.vercel.app/adduser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ async function login(event) {
   const password = document.f1.pwd1.value;
 
   try {
-    const response = await fetch("http://localhost:8000/login", {
+    const response = await fetch("https://cine-sphere-chi.vercel.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -62,7 +62,7 @@ async function login(event) {
 
     if (result.status === 200) {
       localStorage.setItem("username", username);
-      window.location.replace("/frontend/index.html");
+      window.location.replace("https://cine-sphere-bz91.vercel.app/");
     } else {
       document.getElementById("fail1").innerHTML = result.message;
       document.f1.reset();
