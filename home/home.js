@@ -62,7 +62,7 @@ async function login(event) {
 
     if (result.status === 200) {
       localStorage.setItem("username", username);
-      window.location.replace("../index.html");
+      window.location.replace("/frontend/index.html");
     } else {
       document.getElementById("fail1").innerHTML = result.message;
       document.f1.reset();
