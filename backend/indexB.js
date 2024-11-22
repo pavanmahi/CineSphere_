@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors(
-  origin: 'https://cine-sphere-home.vercel.app',
+  origin: '*',
   methods: ['GET', 'POST'],
   credentials: true
 ));
