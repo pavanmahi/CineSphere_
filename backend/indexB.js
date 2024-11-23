@@ -42,7 +42,9 @@ app.post("/login", async (req, res) => {
       if (doc.password === password) {
         res.cookie('username', username, {
           maxAge: 604800000, // 7 days in milliseconds
-        });
+          sameSite: 'None',  // For cross-origin requests
+          secure: true,      // Ensure this is set to true when using SameSite: None
+        });        
         res.json({ message: "Login successful", status: 200 });
       } else {
         res.json({ message: "Password is incorrect", status: 101 });
