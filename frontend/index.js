@@ -6,7 +6,7 @@ const APILINK = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.
 const SEARCHAPI =
   "https://api.themoviedb.org/3/search/movie?&api_key=3138cbdc0ea47398fa41b29ae9f47cf6&query=";
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-const host = "http://localhost:8000";
+const host = "https://cinesphere-backend-k0p7.onrender.com";
 
 const home1 = document.getElementById("home1");
 const goWatch1 = document.getElementById("gowatchlist1");
@@ -73,7 +73,23 @@ home.addEventListener("click", (e) => {
   returnMovies(`${APILINK}${language}&page=${page}`);
 });
 
-const username = localStorage.getItem("username");
+// Function to get a cookie by its name
+function getCookie(name) {
+  const cookieArr = document.cookie.split(';');
+  for (let i = 0; i < cookieArr.length; i++) {
+    const cookie = cookieArr[i].trim();
+    if (cookie.startsWith(name + "=")) {
+      return cookie.substring(name.length + 1);
+    }
+  }
+  return null;  // Return null if the cookie is not found
+}
+
+const username = getCookie("username");
+console.log(username+" in main page");
+
+
+// const username = localStorage.getItem("username");
 let Name;
 let email;
 let password;
