@@ -73,23 +73,16 @@ home.addEventListener("click", (e) => {
   returnMovies(`${APILINK}${language}&page=${page}`);
 });
 
-// Function to get a cookie by its name
-function getCookie(name) {
-  const cookieArr = document.cookie.split(';');
-  for (let i = 0; i < cookieArr.length; i++) {
-    const cookie = cookieArr[i].trim();
-    if (cookie.startsWith(name + "=")) {
-      return cookie.substring(name.length + 1);
-    }
-  }
-  return null;  // Return null if the cookie is not found
+// const username = localStorage.getItem("username");
+function getUsernameFromUrl() {
+  const urlParams = new URLSearchParams(window.location.search); // Get URL search params
+  const username = urlParams.get('username'); // Get the value of 'username' param
+  return username;
 }
 
-const username = getCookie("username");
-console.log(username+" in main page");
+const username = getUsernameFromUrl();
+console.log(username);  // Log the username to confirm it's retrieved from the URL
 
-
-// const username = localStorage.getItem("username");
 let Name;
 let email;
 let password;

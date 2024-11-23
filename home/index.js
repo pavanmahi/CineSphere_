@@ -62,8 +62,8 @@ async function login(event) {
     const result = await response.json();
 
     if (result.status === 200) {
-      localStorage.setItem("username", username);
-      window.location.replace("https://cine-sphere-bz91.vercel.app/");
+      // localStorage.setItem("username", username);
+      window.location.replace(`https://cine-sphere-bz91.vercel.app/?username=${username}`);
     } else {
       document.getElementById("fail1").innerHTML = result.message;
       document.f1.reset();

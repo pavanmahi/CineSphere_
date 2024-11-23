@@ -1,4 +1,5 @@
 import express from "express";
+const session = require('express-session');
 import mongoose, { Mongoose } from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
@@ -39,14 +40,7 @@ app.post("/login", async (req, res) => {
     if (!doc) {
       res.json({ message: "Username does not exist", status: 100 });
     } else {
-      if (doc.password === password) {
-        res.cookie('username', username, {
-          maxAge: 604800000,  // 7 days
-          httpOnly: false,    // Do not use httpOnly so it can be accessed in JavaScript
-          sameSite: 'None',
-          secure: true,
-          path: '/',
-        });        
+      if (doc.password === password) {     
         res.json({ message: "Login successful", status: 200 });
       } else {
         res.json({ message: "Password is incorrect", status: 101 });
