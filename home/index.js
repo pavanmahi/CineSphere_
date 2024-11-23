@@ -17,7 +17,7 @@ async function register(event) {
   const username = document.f2.user.value;
 
   try {
-    const response = await fetch("https://cine-sphere-gamma.vercel.app/adduser", {
+    const response = await fetch("https://cinesphere-backend-k0p7.onrender.com/adduser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ async function login(event) {
   const password = document.f1.pwd1.value;
 
   try {
-    const response = await fetch("https://cine-sphere-gamma.vercel.app/login", {
+    const response = await fetch("https://cinesphere-backend-k0p7.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
