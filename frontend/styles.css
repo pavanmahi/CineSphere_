@@ -139,14 +139,6 @@ section {
 	color: white;
 	
 }
-.register_form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
-	height: 90%;
-	/* padding-left: 20px; */
-  }
 .r2{
 	box-shadow: 0 0 10px rgba(43, 178, 202, 0.8);
 }
