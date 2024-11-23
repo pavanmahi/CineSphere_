@@ -428,7 +428,7 @@ form.addEventListener("submit", (e) => {
 
 const logout = document.getElementById("logout");
 logout.addEventListener("click", (e) => {
-  window.location.replace("/home/index.html");
+  window.location.replace("https://cine-sphere-home.vercel.app/");
 });
 
 function showSection() {
