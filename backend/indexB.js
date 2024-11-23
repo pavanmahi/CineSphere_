@@ -1,5 +1,4 @@
 import express from "express";
-const session = require('express-session');
 import mongoose, { Mongoose } from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
