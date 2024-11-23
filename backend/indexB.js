@@ -7,11 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors(
-  origin: '*',
-  methods: ['GET', 'POST'],
-  credentials: true
-));
+app.use(cors());
 const port = process.env.PORT || 8000;
 const MONGO_URL = process.env.MONGO_URL;
 mongoose
