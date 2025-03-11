@@ -4,7 +4,6 @@
 
 CineSphere is a dynamic web application designed to elevate the movie-watching experience. Users can explore movies, manage their collections, and engage with a vibrant community of movie enthusiasts. The application offers advanced features like real-time recommendations, secure user authentication, and watchlist management.
 
----
 
 ## 🚀 Features
 
@@ -14,7 +13,6 @@ CineSphere is a dynamic web application designed to elevate the movie-watching e
 - 📌 Watchlist management to track favorite movies.
 - 📝 Interactive reviews and ratings.
 
----
 
 ## 💻 Technologies Used
 
@@ -28,7 +26,6 @@ CineSphere is a dynamic web application designed to elevate the movie-watching e
 - **MongoDB** – For secure and scalable database management.
 - **JWT** – For secure user authentication.
 
----
 
 ## ⚙️ Installation and Setup
 
@@ -38,28 +35,32 @@ CineSphere is a dynamic web application designed to elevate the movie-watching e
    ```bash
    git clone https://github.com/yourusername/CineSphere.git
    cd CineSphere/backend
+   ```
 
 2. Install dependencies:
    ```bash
    npm install
    ```
+
 3. Start the backend server:
    ```bash
    npm start
    ```
    Once started, you should see a console message: **"Connected to cloud database"**.
 
-## Frontend (React.js)
 
-### Navigate to the frontend directory:
+### Frontend (React.js)
 
-```bash
-cd frontend
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
 
 2. Install dependencies:
    ```bash
    npm install
    ```
+
 3. Start the React server:
    ```bash
    npm start
@@ -67,7 +68,6 @@ cd frontend
 
 The application will be accessible at `http://localhost:3000` with the backend running on `http://localhost:5000`.
 
----
 
 ## 🛠️ How to Use
 
@@ -82,7 +82,6 @@ The application will be accessible at `http://localhost:3000` with the backend r
 - Manage your watchlist and liked movies.
 - Read and contribute to movie reviews.
 
----
 
 ## 🎯 Unique Features (WOW Factors)
 
@@ -92,13 +91,12 @@ The application will be accessible at `http://localhost:3000` with the backend r
 - ⭐ Interactive review and rating system.
 - ⭐ Smooth and intuitive user experience.
 
----
 
 ## 📞 Contact
 
 For queries or contributions:
 
-- 📧 Email: [pavanbejawada4376@gmail.com]mailto:pavanbejawada4376@gmail.com)
+- 📧 Email: [pavanbejawada4376@gmail.com](mailto:pavanbejawada4376@gmail.com)
 - 🌐 GitHub: [Pavanmahi](https://github.com/pavanmahi)
 
 
