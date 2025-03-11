@@ -97,8 +97,8 @@ The application will be accessible at `http://localhost:3000` with the backend r
 
 For queries or contributions:
 
-- 📧 Email: [pavanbejawada4376@gmail.com](mailto:pavanbejawada4376@gmail.com)
-- 🌐 GitHub: [pavanmahi](https://github.com/pavanmahi)
+- 📧 Email: [pavanbejawada4376@gmail.com].(mailto:pavanbejawada4376@gmail.com)
+- 🌐 GitHub: [pavanmahi].(https://github.com/pavanmahi)
 
 ---
 
