@@ -1,6 +1,6 @@
-# 🎬 **CineSphere - Explore Movies Like Never Before**
+🎬 **CineSphere - Explore Movies Like Never Before**
 
-## 🔍 **Project Overview**
+🔍 **Project Overview**
 
 CineSphere is a dynamic web application designed to elevate the movie-watching experience. Users can explore movies, manage their collections, and engage with a vibrant community of movie enthusiasts. The application offers advanced features like real-time recommendations, secure user authentication, and watchlist management.
 
@@ -97,9 +97,9 @@ The application will be accessible at `http://localhost:3000` with the backend r
 
 For queries or contributions:
 
-- 📧 Email: [pavanbejawada4376@gmail.com].(mailto:pavanbejawada4376@gmail.com)
-- 🌐 GitHub: [pavanmahi].(https://github.com/pavanmahi)
+- 📧 Email: pavanbejawada4376@gmail.com
+- 🌐 GitHub: https://github.com/pavanmahi
 
 ---
 
-### 🚀 *CineSphere: Where Movies Come to Life!*
+🚀 *CineSphere: Where Movies Come to Life!*
